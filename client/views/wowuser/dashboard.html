@@ -1,0 +1,63 @@
+
+<div class="container admin-rating" >
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="heading">WoWSome User<span>
+                    <button  class="btn btn-primary " ng-click = "signOut();">LogOut</button>
+            </span></h2>
+            
+
+
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <tr>
+                        <td width="26%"><strong>Name</strong></td>
+                        <td width="18%"><strong>Email</strong></td>
+                        <td width="17%"><strong>PhoneNumber</strong></td>
+                        <td width="13%"><strong>Address</strong></td>
+                    </tr>
+                    <tr ng-repeat="wowSomeUser in wowSomeUsers" ng-show="wowSomeUsers !== undefined && wowSomeUsers.length > 0">
+                        <td>Mr/Ms {{ wowSomeUser.name }}</td>
+                        <td>{{ wowSomeUser.email }}</td>
+                        <td> {{ wowSomeUser.phone_number }}</td>
+                        <td>{{ wowSomeUser.address }}</td>
+                        
+                    </tr>
+                    <tr ng-show="wowSomeUsers === undefined || wowSomeUsers.length <= 0">
+                        <td colspan="5">No users available</td>
+                    </tr>
+                </table>
+                <h2 class="heading">Hey {{wowname}},   Welcome to the WoWSome</h2>
+                <h4 style = "color: rgb(33, 156, 194)">See Our  <b>WOWSOME</b>  Company details for any Query</h4>
+                <div> Address: Cabin 13, 4th Floor, T-Hub Catalyst, IIIT Campus, Gachibowli, Hyderabad, Telangana 500032</br>
+                        Hours: Open 10AM⋅ and  Closes 7PM</br>
+                        Phone: 098499 95050 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/ng-template" id="warning-dialog.html">
+    <div class="modal-header">
+     <h5 style="color:#af172c;">Hey! You're Idle. Do Something!</h5>
+    </div>
+    <div idle-countdown="countdown" class="modal-body">
+     <progressbar animate="true" class="progress-striped active" style="color:#3d6aa3;">You'll be logged out in <b>{{Math.floor(countdown/60)}}:{{countdown%60}}</b> second(s).</progressbar>
+    </div>
+  
+  </script>
+  <script type="text/ng-template" id="timedout-dialog.html">
+    <div class="modal-header">
+     <h5 style="color:#3d6aa3;">You've Timed Out!</h5>
+    </div>
+    <div class="modal-body">
+     <p style="color:#41bb38;">
+        You were idle too long. Please login again.
+     </p>
+   </div>
+  </script>
+
+
+
+
+

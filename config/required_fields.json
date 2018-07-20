@@ -1,0 +1,16 @@
+{
+    "USER": [
+        "name",
+        "email",
+        "password",
+        "phone_number"
+       
+    ],
+    "LOGIN": [
+        "email",
+        "password"
+    ],
+
+    "JWT_SECRET": "asd6v65v6754c654ce54c6464c767",
+    "AUTH_TOKEN_EXPIRATION_TIME":"60"
+}

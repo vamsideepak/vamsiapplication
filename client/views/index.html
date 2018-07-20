@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="WoWsome">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>WoWSome</title>
+
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href="css/angular-growl.min.css" rel="stylesheet">
+    <link href="css/angular-toggle-switch.css" rel="stylesheet">
+    <link href="css/jquery.growl.css" rel="stylesheet">
+    <link href="css/toaster.min.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+        <toaster-container toaster-options="{'close-button': true, 'time-out':{ 'toast-info': 5000, 'toast-success': 5000, 'toast-warning':5000, 'toast-error': 0 } }"></toaster-container>
+  
+    <div ng-view autoscroll="true"></div>
+
+    <script type="text/javascript" src="js/libraries/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/libraries/jquery.fullscreen.js"></script>
+    <script type="text/javascript" src="js/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/libraries/mdb.min.js"></script>
+    <script src="bower_components/moment/moment.js" charset="utf-8"></script>
+    <script src="bower_components/angular/angular.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/libraries/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/libraries/angular-resource.min.js"></script>
+    <script type="text/javascript" src="js/libraries/angular-idle.js"></script>
+    <script type="text/javascript" src="js/libraries/angular-growl.js"></script>
+    <script type="text/javascript" src="js/libraries/ui-bootstrap-tpls.js"></script>
+    <script type="text/javascript" src="/js/libraries/jquery.growl.js"></script>
+    <script type="text/javascript" src="/js/libraries/toaster.min.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/services/app.service.js"></script>
+    <script type="text/javascript" src="js/services/authenticate.service.js"></script>
+    <script type="text/javascript" src="js/controllers/signin_up/signup.controller.js"></script>
+    <script type="text/javascript" src="js/controllers/signin_up/signin.controller.js"></script>
+    <script type="text/javascript" src="js/controllers/wowuser/dashboard.controller.js"></script>
+
+</body>
+
+</html>

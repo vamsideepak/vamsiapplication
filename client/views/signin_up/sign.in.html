@@ -1,0 +1,34 @@
+<body style="background:#f8f8f8;">
+    <div class="container">
+        <div class="row login-pan">
+            <div class="logo-pan">
+                <a href="#/"><img src="images/wowsome.png" alt="" /></a> 
+            </div>
+            <div class="login-panel panel panel-default">
+                    <span>Sign In</span>    
+                <div class="panel-body"> 
+                                      
+                    <!-- <div ng-if="successMessage.length > 0" class="alert alert-success">{{ successMessage }}</div>
+                    <div ng-if="error.length > 0" ng-class="errorClass">{{ error }}</div> -->
+                    <form role="form" ng-submit="signIn()">
+                        <fieldset>
+                            <!--Email validation-->
+                            <div class="md-form"> <i class="fa fa-envelope prefix"></i>
+                                <input type="text" data-ng-model="loginUser.email" id="form1" class="form-control" required>
+                                <label for="form1">Type your email</label>
+                            </div>
+                            <!--Password validation-->
+                            <div class="md-form"> <i class="fa fa-lock prefix"></i>
+                                <input type="password" data-ng-model="loginUser.password" id="form2" class="form-control" required>
+                                <label for="form2">Type your password</label>
+                            </div>
+                            <!-- Change this to a button or input when using this as a form -->
+                            <button  class="btn btn-lg btn-primary btn-block">Sign In</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="forgot-pan"><span><a href="#signUp"><b>Sign Up</b></a></span></div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,46 @@
+<body style="background:#f8f8f8;">
+    <div class="container">
+        <div class="row login-pan reg-pan">
+            <div class="logo-pan">
+                <a href="#/"><img src="images/wowsome.png" alt="" /></a>  </div>
+            <div class="login-panel panel panel-default">
+                    <span>Sign Up</span>
+                <div class="panel-body">
+                        <!-- <div ng-if="successMsg.length > 0" class="alert alert-success">{{ successMsg }}</div>
+                        <div ng-if="errorMessage.length > 0" class="alert alert-danger">{{ errorMessage }}</div> -->
+                    <form role="form" ng-submit="signUp()">
+                        <fieldset>
+
+                            <div class="md-form"> <i class="fa fa-user prefix"></i>
+                                <input type="text" data-ng-model="registerUser.name" id="form1" class="form-control" required>
+                                <label for="form1">Type your name</label>
+                            </div>
+
+                            <div class="md-form"> <i class="fa fa-envelope prefix"></i>
+                                <input type="text" data-ng-model="registerUser.email" id="form3" class="form-control" required>
+                                <label for="form3">Type your email</label>
+                            </div>
+                            
+                            <div class="md-form"> <i class="fa fa-lock prefix"></i>
+                                <input type="password" data-ng-model="registerUser.password" id="form4" class="form-control password-rules" required>
+                                <span class="p-rules"><strong>Password Rules:</strong><br>1. &nbsp;&nbsp;Minimum 8 char<br>2. &nbsp;&nbsp;Minimum 1 uppercase<br>3. &nbsp;&nbsp;Minimum 1 lowercase<br>4. &nbsp;&nbsp;Minimum 1 special char<br>5. &nbsp;&nbsp;Minimum 1 numeric</span>
+                                <label for="form4">Type your password</label>
+                            </div>
+                            <div class="md-form"> <i class="fa fa-user prefix"></i>
+                                <input type="text" data-ng-model="registerUser.address" id="form1" class="form-control" required>
+                                <label for="form1">Type your address</label>
+                            </div>
+                            <div class="md-form"> <i class="fa fa-unlock-alt prefix"></i>
+                                <input type="text" data-ng-model="registerUser.phone_number" id="form5" class="form-control" maxlength="10" required>
+                                <label for="form5">type your phone number</label>
+                            </div>
+                            <!-- Change this to a button or input when using this as a form -->
+                            <button class="btn btn-lg btn-primary btn-block">Sign Up</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="forgot-pan"><span><a href="#signIn"><b>Sign In</b></a></span></div>
+        </div>
+    </div>
+</body>
